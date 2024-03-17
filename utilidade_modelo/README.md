@@ -1,12 +1,14 @@
 # Agentes Baseados Em Atividade
 Um agente baseado na utilidade é um tipo de agente que toma as decisões com base na avaliação de potenciais resultados com base na conveniência dessas decisões. Estes agentes procuram maximizar o seu desempenho global, selecionando ações que conduzam aos resultados mais favoráveis.
- *
 
+- Para demonstração, iremos desenvolver um agente baseado na utilidade em python que deverá decidir entre as seguintes decições: Estudar, Assistir TV, Sair com amigos ou Dormir.
+- Note que para cada atividade, temos o seu grau de conveniênvia: Estudar (10), Assistir TV (5), Sair com amigos (8) ou Dormir (12).
 
-Vou criar um exemplo simples de um agente baseado em modelo em Python, onde o agente decide se deve ir para academia ou não sair de casa com base em algumas condições climáticas.
+Neste exemplo, temos a classe Agente, que representa nosso agente. Ela recebe no seu construtor o parâmetro <strong>self - referênciando a prórpia classe </strong> e <strong> atividade - referênciando ao nosso dicinário de atividades</strong>.
 
-Neste exemplo, temos a classe ModelBasedAgent, que representa nosso agente. Ele recebe a temperatura e o tempo como parâmetros ao ser inicializado. O método decide() é responsável por tomar a decisão com base nessas informações.
+Em seguida, temos o metodo <strong>getAtividade()</strong> - responsável por pecorrer todo o dicionário e retornar a atividade com maior grau de conveniência.
 
-Em seguida, temos a função simulate_enviroment(), que usa A API de do climatempo. Veja a documentação completa no site oficial: https://advisor.climatempo.com.br/.
-
-Na função principal main(), obtemos a temperatura e o tempo do ambiente, criamos uma instância do agente e solicitamos que ele tome uma decisão com base nessas informações. Em seguida, imprimimos a decisão do agente.
+## Testes práticos
+Vamos realizar a execução do nosso código
+ * <strong> iniciar_agente() - </strong> Função responsável por inicar o nosso agente, definindo e carregando as nossas atividades possíveis em nosso dicionário de dados. Em seguida, temos a criação da instancia do nosso agente, passando por parametro o nosso dicionário de atividades e exibindo no console o resultado escolhido pelo agente.
+ 
